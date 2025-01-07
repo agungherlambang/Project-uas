@@ -122,4 +122,41 @@ def validate_input(input_value):
         except ValueError:
             print("Format tanggal tidak valid. Gunakan MM/YYYY.")
             return None
-```
+````
+
+Metode statis ini memvalidasi input untuk jumlah mie ayam yang dimasukkan oleh pengguna. Pertama, mencoba mengonversi nilai input ke dalam bentuk integer. Jika berhasil, akan memeriksa apakah jumlah mie ayam lebih dari atau sama dengan 1. Jika valid, mengembalikan nilai quantity, jika tidak valid, mencetak pesan error dan mengembalikan None.
+
+## FUNGSI MAIN
+
+```pyhton
+# Input dari pengguna
+    customer_name = input("Masukkan nama pelanggan: ")
+    user_input = input("Masukkan jumlah mie ayam: ")
+    date_input = input("Masukkan tanggal (bulan/tahun - MM/YYYY): ")
+    
+    # Validasi input
+    quantity = Process.validate_input(user_input)
+    if quantity is None:
+        return  # Menghentikan program jika input tidak valid
+
+    date = Process.validate_date(date_input)
+    if date is None:
+        return  # Menghentikan program jika input tanggal tidak valid
+
+    # Proses data
+    mattress = Mattress(quantity)
+    total_price = mattress.total_price()
+
+    # Tampilkan hasil
+    View.display_table(customer_name, date, quantity, total_price)
+
+
+if __name__ == "__main__":
+    main()
+````
+Fungsi utama ini berfungsi sebagai penghubung antara input pengguna, pemrosesan data, dan tampilan hasil. Input dari pengguna: Pengguna diminta untuk memasukkan nama pelanggan, jumlah mie ayam, dan tanggal pemesanan.
+
+## BERIKUT CONTOH INPUT 
+
+![image 2025-01-07 210316](https://github.com/user-attachments/assets/a57bb5e1-10d4-4d88-92f1-9c37acddf2b0)
+
