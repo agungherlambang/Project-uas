@@ -8,7 +8,7 @@ Program ini adalah aplikasi sederhana untuk berjualan bebek rica rica di termina
 
 ## BERIKUT PROGRAM INPUT
 
-```pyhton
+````pyhton
 class Mattress:
     def __init__(self, quantity):
         self.quantity = quantity
