@@ -1,1 +1,6 @@
-# Project-uas
+# NAMA: AGUNG HERLMABNAG 
+# KELAS: TI.24.A4
+# NIM: 312410296
+# MATKUL: BAHASA PEMROGRAMAN 
+
+![image 2025-01-07 203043](https://github.com/user-attachments/assets/6371f870-5065-4659-bbae-a627601c2278)
